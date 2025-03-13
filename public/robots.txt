@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://borrusik.github.io/sitemap.xml 

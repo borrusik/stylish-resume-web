@@ -1,5 +1,4 @@
-
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const SportsSection = () => {
   return (
@@ -14,7 +13,8 @@ const SportsSection = () => {
         >
           <h2 className="section-title">Спортивная деятельность</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Спорт всегда был важной частью моей жизни, помогая развивать дисциплину и командную работу.
+            Спорт всегда был важной частью моей жизни, помогая развивать
+            дисциплину и командную работу.
           </p>
         </motion.div>
 
@@ -27,17 +27,18 @@ const SportsSection = () => {
             className="glass p-6 rounded-xl"
           >
             <div className="mb-4">
-              <span className="tag">2018 - настоящее время</span>
+              <span className="tag">2023 - настоящее время</span>
             </div>
             <h3 className="text-xl font-bold mb-4">Баскетбол</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Участник Первой лиги Украины по баскетболу. Играю на позиции защитника, 
-              развивая навыки командной работы, стратегического мышления и лидерства.
+              Участник Первой лиги Украины по баскетболу. Играю на позиции
+              защитника, развивая навыки командной работы, стратегического
+              мышления и лидерства.
             </p>
-            <div className="relative h-40 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/30 z-10" />
-              <img 
-                src="/placeholder.svg" 
+            <div className="relative h-50 rounded-lg overflow-hidden">
+              <div className="absolute inset-0  from-primary/10 to-primary/30 " />
+              <img
+                src="/basketball.jpg"
                 alt="Basketball"
                 className="h-full w-full object-cover object-center"
               />
@@ -56,13 +57,14 @@ const SportsSection = () => {
             </div>
             <h3 className="text-xl font-bold mb-4">Бадминтон</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Занимался бадминтоном на протяжении восьми лет, участвуя в городских и 
-              региональных соревнованиях. Развил высокую концентрацию и точность.
+              Занимался бадминтоном на протяжении восьми лет, участвуя в
+              городских и региональных соревнованиях. Развил высокую
+              концентрацию и точность.
             </p>
-            <div className="relative h-40 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/30 z-10" />
-              <img 
-                src="/placeholder.svg" 
+            <div className="relative h-50 rounded-lg overflow-hidden">
+              <div className="absolute inset-0 from-primary/10 to-primary/30 z-10" />
+              <img
+                src="/badminton.jpg"
                 alt="Badminton"
                 className="h-full w-full object-cover object-center"
               />
@@ -78,8 +80,9 @@ const SportsSection = () => {
           className="mt-12 text-center"
         >
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Спортивная деятельность помогла мне развить ключевые навыки, которые применяю в программировании: 
-            дисциплину, стратегическое мышление и умение работать в команде.
+            Спортивная деятельность помогла мне развить ключевые навыки, которые
+            применяю в программировании: дисциплину, стратегическое мышление и
+            умение работать в команде.
           </p>
         </motion.div>
       </div>

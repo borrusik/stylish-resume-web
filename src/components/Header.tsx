@@ -53,7 +53,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-700">
-            BorisCherkashin
+          Borrusik
           </span>
         </div>
 

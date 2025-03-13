@@ -100,7 +100,7 @@ const SkillsSection = () => {
           className="mt-12 text-center"
         >
           <a 
-            href="https://github.com/" 
+            href="https://github.com/borrusik" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-lg bg-secondary text-foreground font-medium hover:bg-secondary/80 transition-colors"

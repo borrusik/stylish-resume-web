@@ -138,7 +138,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-400">example@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-400">wwork8655@gmail.com</p>
                 </div>
               </a>
               
@@ -153,7 +153,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Telegram</h4>
-                  <p className="text-gray-600 dark:text-gray-400">@username</p>
+                  <p className="text-gray-600 dark:text-gray-400">@borrusik</p>
                 </div>
               </a>
               
@@ -168,7 +168,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">GitHub</h4>
-                  <p className="text-gray-600 dark:text-gray-400">github.com/username</p>
+                  <p className="text-gray-600 dark:text-gray-400">github.com/borrusik</p>
                 </div>
               </a>
             </div>
