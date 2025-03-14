@@ -11,10 +11,10 @@ const SportsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Спортивная деятельность</h2>
+          <h2 className="section-title">Спортивна діяльність</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Спорт всегда был важной частью моей жизни, помогая развивать
-            дисциплину и командную работу.
+            Спорт завжди був важливою частиною мого життя, допомагаючи розвивати
+            дисципліну та командну роботу.
           </p>
         </motion.div>
 
@@ -27,13 +27,13 @@ const SportsSection = () => {
             className="glass p-6 rounded-xl"
           >
             <div className="mb-4">
-              <span className="tag">2023 - настоящее время</span>
+              <span className="tag">2023 - теперішній час</span>
             </div>
             <h3 className="text-xl font-bold mb-4">Баскетбол</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Участник Первой лиги Украины по баскетболу. Играю на позиции
-              защитника, развивая навыки командной работы, стратегического
-              мышления и лидерства.
+              Учасник Першої ліги України з баскетболу. Граю на позиції
+              захисника, розвиваючи навички командної роботи, стратегічного
+              мислення та лідерства.
             </p>
             <div className="relative h-50 rounded-lg overflow-hidden">
               <div className="absolute inset-0  from-primary/10 to-primary/30 " />
@@ -55,11 +55,11 @@ const SportsSection = () => {
             <div className="mb-4">
               <span className="tag">2014 - 2022</span>
             </div>
-            <h3 className="text-xl font-bold mb-4">Бадминтон</h3>
+            <h3 className="text-xl font-bold mb-4">Бадмінтон</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Занимался бадминтоном на протяжении восьми лет, участвуя в
-              городских и региональных соревнованиях. Развил высокую
-              концентрацию и точность.
+              Займався бадмінтоном протягом восьми років, беручи участь у
+              міських та регіональних змаганнях. Розвив високу концентрацію та
+              точність.
             </p>
             <div className="relative h-50 rounded-lg overflow-hidden">
               <div className="absolute inset-0 from-primary/10 to-primary/30 z-10" />
@@ -80,9 +80,9 @@ const SportsSection = () => {
           className="mt-12 text-center"
         >
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Спортивная деятельность помогла мне развить ключевые навыки, которые
-            применяю в программировании: дисциплину, стратегическое мышление и
-            умение работать в команде.
+            Спортивна діяльність допомогла мені розвинути ключові навички, які
+            застосовую у програмуванні: дисципліну, стратегічне мислення та
+            вміння працювати в команді.
           </p>
         </motion.div>
       </div>

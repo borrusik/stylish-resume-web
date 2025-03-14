@@ -1,41 +1,48 @@
-
-import { motion } from 'framer-motion';
-import { 
-  Github, 
-  Code2, 
-  FlaskConical, 
-  Database, 
+import { motion } from "framer-motion";
+import {
+  Github,
+  Code2,
+  FlaskConical,
+  Database,
   PenTool,
-  BrainCircuit, 
+  BrainCircuit,
   GitBranch,
-  Container
-} from 'lucide-react';
+  Container,
+} from "lucide-react";
 
 const skills = [
   {
-    category: 'Языки программирования',
+    category: "Мови програмування",
     skills: [
-      { name: 'Python', icon: <Code2 className="w-6 h-6" />, level: 90 },
-      { name: 'JavaScript', icon: <Code2 className="w-6 h-6" />, level: 85 },
-      { name: 'HTML/CSS', icon: <PenTool className="w-6 h-6" />, level: 80 },
-    ]
+      { name: "Python", icon: <Code2 className="w-6 h-6" />, level: 90 },
+      { name: "JavaScript", icon: <Code2 className="w-6 h-6" />, level: 85 },
+      { name: "HTML/CSS", icon: <PenTool className="w-6 h-6" />, level: 80 },
+    ],
   },
   {
-    category: 'Фреймворки и библиотеки',
+    category: "Фреймворки та бібліотеки",
     skills: [
-      { name: 'React', icon: <Code2 className="w-6 h-6" />, level: 75 },
-      { name: 'Flask', icon: <FlaskConical className="w-6 h-6" />, level: 85 },
-      { name: 'Django', icon: <Code2 className="w-6 h-6" />, level: 80 },
-    ]
+      { name: "React", icon: <Code2 className="w-6 h-6" />, level: 75 },
+      { name: "Flask", icon: <FlaskConical className="w-6 h-6" />, level: 85 },
+      { name: "Django", icon: <Code2 className="w-6 h-6" />, level: 80 },
+    ],
   },
   {
-    category: 'Инструменты и технологии',
+    category: "Інструменти та технології",
     skills: [
-      { name: 'Git', icon: <GitBranch className="w-6 h-6" />, level: 85 },
-      { name: 'Docker', icon: <Container className="w-6 h-6" />, level: 70 },
-      { name: 'БД (SQL/NoSQL)', icon: <Database className="w-6 h-6" />, level: 75 },
-      { name: 'AI (ML/DL)', icon: <BrainCircuit className="w-6 h-6" />, level: 80 },
-    ]
+      { name: "Git", icon: <GitBranch className="w-6 h-6" />, level: 85 },
+      { name: "Docker", icon: <Container className="w-6 h-6" />, level: 70 },
+      {
+        name: "БД (SQL/NoSQL)",
+        icon: <Database className="w-6 h-6" />,
+        level: 75,
+      },
+      {
+        name: "ШІ (ML/DL)",
+        icon: <BrainCircuit className="w-6 h-6" />,
+        level: 80,
+      },
+    ],
   },
 ];
 
@@ -50,9 +57,10 @@ const SkillsSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Навыки</h2>
+          <h2 className="section-title">Навички</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Мои технические навыки и компетенции в области разработки программного обеспечения.
+            Мої технічні навички та компетенції у сфері розробки програмного
+            забезпечення.
           </p>
         </motion.div>
 
@@ -67,7 +75,7 @@ const SkillsSection = () => {
               className="glass p-6 rounded-xl"
             >
               <h3 className="text-xl font-bold mb-6">{category.category}</h3>
-              
+
               <div className="space-y-6">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
@@ -75,14 +83,17 @@ const SkillsSection = () => {
                       <div className="mr-2 text-primary">{skill.icon}</div>
                       <span className="font-medium">{skill.name}</span>
                     </div>
-                    
+
                     <div className="h-2 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                      <motion.div 
+                      <motion.div
                         className="h-full bg-gradient-to-r from-primary to-blue-500 rounded-full"
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.5 + skillIndex * 0.1 }}
+                        transition={{
+                          duration: 1,
+                          delay: 0.5 + skillIndex * 0.1,
+                        }}
                       />
                     </div>
                   </div>
@@ -99,14 +110,14 @@ const SkillsSection = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-12 text-center"
         >
-          <a 
-            href="https://github.com/borrusik" 
-            target="_blank" 
+          <a
+            href="https://github.com/borrusik"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-lg bg-secondary text-foreground font-medium hover:bg-secondary/80 transition-colors"
           >
             <Github className="w-5 h-5 mr-2" />
-            Посмотреть проекты на GitHub
+            Переглянути проекти на GitHub
           </a>
         </motion.div>
       </div>

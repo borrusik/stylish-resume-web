@@ -1,34 +1,36 @@
-
-import { motion } from 'framer-motion';
-import { Mail, Send, Github, MessageSquare } from 'lucide-react';
-import { useState } from 'react';
-import { toast } from 'sonner';
-import { Button } from '@/components/ui/button';
-import DownloadButton from './ui/DownloadButton';
+import { motion } from "framer-motion";
+import { Mail, Send, Github, MessageSquare } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
+import DownloadButton from "./ui/DownloadButton";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
-      toast.success('Сообщение отправлено!', {
-        description: 'Спасибо за ваше сообщение. Я свяжусь с вами в ближайшее время.'
+      toast.success("Повідомлення відправлено!", {
+        description:
+          "Дякую за ваше повідомлення. Я зв'яжуся з вами найближчим часом.",
       });
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
       setIsSubmitting(false);
     }, 1500);
   };
@@ -43,9 +45,10 @@ const ContactSection = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Контакты</h2>
+          <h2 className="section-title">Контакти</h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Свяжитесь со мной для обсуждения сотрудничества, проектов или просто чтобы поздороваться.
+            Зв'яжіться зі мною для обговорення співпраці, проектів або просто
+            щоб привітатися.
           </p>
         </motion.div>
 
@@ -57,12 +60,15 @@ const ContactSection = () => {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold mb-4">Связаться со мной</h3>
-            
+            <h3 className="text-2xl font-bold mb-4">Зв\'язатися зі мною</h3>
+
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
-                  Имя
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-1"
+                >
+                  Ім\'я
                 </label>
                 <input
                   type="text"
@@ -72,12 +78,15 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
-                  placeholder="Ваше имя"
+                  placeholder="Ваше ім\'я"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-1"
+                >
                   Email
                 </label>
                 <input
@@ -91,10 +100,13 @@ const ContactSection = () => {
                   placeholder="your@email.com"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1">
-                  Сообщение
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-1"
+                >
+                  Повідомлення
                 </label>
                 <textarea
                   id="message"
@@ -104,16 +116,12 @@ const ContactSection = () => {
                   required
                   rows={4}
                   className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
-                  placeholder="Ваше сообщение..."
+                  placeholder="Ваше повідомлення..."
                 />
               </div>
-              
-              <Button 
-                type="submit" 
-                className="w-full" 
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Отправка...' : 'Отправить сообщение'}
+
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Відправка..." : "Відправити повідомлення"}
                 <Send className="ml-2 h-4 w-4" />
               </Button>
             </form>
@@ -126,11 +134,11 @@ const ContactSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-bold mb-4">Контактная информация</h3>
-            
+            <h3 className="text-2xl font-bold mb-4">Контактна інформація</h3>
+
             <div className="space-y-6">
-              <a 
-                href="mailto:example@gmail.com" 
+              <a
+                href="mailto:example@gmail.com"
                 className="group flex items-center p-4 glass rounded-xl hover:bg-primary/10 transition-colors"
               >
                 <div className="mr-4 p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
@@ -138,13 +146,15 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-400">wwork8655@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    wwork8655@gmail.com
+                  </p>
                 </div>
               </a>
-              
-              <a 
-                href="https://t.me/username" 
-                target="_blank" 
+
+              <a
+                href="https://t.me/username"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center p-4 glass rounded-xl hover:bg-primary/10 transition-colors"
               >
@@ -156,10 +166,10 @@ const ContactSection = () => {
                   <p className="text-gray-600 dark:text-gray-400">@borrusik</p>
                 </div>
               </a>
-              
-              <a 
-                href="https://github.com/username" 
-                target="_blank" 
+
+              <a
+                href="https://github.com/username"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center p-4 glass rounded-xl hover:bg-primary/10 transition-colors"
               >
@@ -168,11 +178,13 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">GitHub</h4>
-                  <p className="text-gray-600 dark:text-gray-400">github.com/borrusik</p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    github.com/borrusik
+                  </p>
                 </div>
               </a>
             </div>
-            
+
             <div className="pt-6">
               <DownloadButton pdfUrl="/resume.pdf" className="w-full" />
             </div>

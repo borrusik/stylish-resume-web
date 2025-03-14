@@ -1,3 +1,10 @@
+# Дозволяємо всім роботам індексувати сайт
 User-agent: *
 Allow: /
+
+# Забороняємо індексацію адміністративних директорій
+Disallow: /admin/
+Disallow: /private/
+
+# Вказуємо на sitemap
 Sitemap: https://borrusik.netlify.app/sitemap.xml 

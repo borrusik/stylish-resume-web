@@ -22,10 +22,10 @@ const AboutSection = () => {
           variants={fadeInUp}
           className="text-center mb-16"
         >
-          <h2 className="section-title">Обо мне</h2>
+          <h2 className="section-title">Про мене</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -44,7 +44,7 @@ const AboutSection = () => {
 
             <div className="glass absolute -bottom-6 -right-6 px-6 py-4 rounded-xl">
               <p className="text-sm font-medium">
-                Студент факультета компьютерных наук
+                Студент факультету комп'ютерних наук
               </p>
             </div>
           </motion.div>
@@ -57,42 +57,41 @@ const AboutSection = () => {
             variants={fadeInUp}
           >
             <h3 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-700">
-              Черкашин Борис Андреевич
+              Черкашин Борис Андрійович
             </h3>
 
             <div className="space-y-6 text-gray-600 dark:text-gray-400">
               <p>
-                Студент Харьковского национального университета
-                радиоэлектроники, факультет компьютерных наук (с 2024 года).
+                Студент Харківського національного університету
+                радіоелектроніки, факультет комп'ютерних наук (з 2024 року).
               </p>
 
               <div>
                 <h4 className="text-lg font-semibold mb-2 text-foreground">
-                  Образование
+                  Освіта
                 </h4>
                 <div className="glass p-4 rounded-xl">
                   <div className="flex flex-col sm:flex-row justify-between mb-1">
                     <span className="font-medium text-foreground">
-                      ХНУРЭ, факультет компьютерных наук
+                      ХНУРЕ, факультет комп'ютерних наук
                     </span>
                     <span className="text-gray-500 dark:text-gray-400">
-                      2024 - настоящее время
+                      2024 - теперішній час
                     </span>
                   </div>
                   <p className="text-sm">
-                    Специализация в области искусственного интеллекта и
-                    веб-разработки
+                    Спеціалізація в галузі штучного інтелекту та веб-розробки
                   </p>
                 </div>
               </div>
 
               <div>
                 <h4 className="text-lg font-semibold mb-2 text-foreground">
-                  Специализация
+                  Спеціалізація
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="tag">Искусственный интеллект</span>
-                  <span className="tag">Веб-разработка</span>
+                  <span className="tag">Штучний інтелект</span>
+                  <span className="tag">Веб-розробка</span>
                   <span className="tag">Python</span>
                   <span className="tag">JavaScript</span>
                   <span className="tag">React</span>
@@ -101,12 +100,11 @@ const AboutSection = () => {
 
               <div>
                 <h4 className="text-lg font-semibold mb-2 text-foreground">
-                  Ищу сотрудничество
+                  Шукаю співпрацю
                 </h4>
                 <p>
-                  Открыт для проектов и стажировок в области разработки с
-                  использованием искусственного интеллекта и современных
-                  веб-технологий.
+                  Відкритий для проектів та стажувань у сфері розробки з
+                  використанням штучного інтелекту та сучасних веб-технологій.
                 </p>
               </div>
             </div>
