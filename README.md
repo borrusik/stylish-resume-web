@@ -4,7 +4,7 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 
 ## Live Demo
 
-**URL**: [Your Demo URL]
+**URL**: 
 
 ## Features
 
